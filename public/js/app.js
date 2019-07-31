@@ -5,7 +5,7 @@ const content = document.querySelector('#content')
 async function getData() {
     let response = '';
     try{
-        response = await fetch(`http://localhost:3000/weather?adress=${search.value}`);
+        response = await fetch(`/weather?adress=${search.value}`);
     } catch(e) {
         console.log(e)
     }
